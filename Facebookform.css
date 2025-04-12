@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: rgb(207, 200, 200);
+    padding: 40px 10px;
+}
+
+section{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    margin: 60px 50px;
+    
+}
+
+article{
+    padding-top: 30px;
+    margin-right: 10px;
+    width: 80%;
+}
+article>h1{
+    font-size: 60px;
+    color: blue;
+}
+
+article>p{
+    font-size: 30px;
+}
+
+aside{
+    width: 500px;
+    text-align: center;
+}
+
+.form-container{
+    box-shadow: 5px 3px 3px 3px gray;
+    width: 100%;
+    height: 300px;
+    border-radius: 7px;
+    padding:5px 20px;
+    background-color: #fff;
+}
+
+input{
+    border: none;
+    width: 100%;
+    box-shadow: 3px 2px 1px 1px gray;
+    padding: 15px 0;
+    margin: 5px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+input::placeholder{
+    padding-left: 5px;
+    font-size: 16.5px;
+}
+
+.btn-blue{
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    font-size: 17px;
+    color: blue;
+    font-weight: 700;
+}
+
+hr{
+    margin-top: 15px;
+}
+
+.btn-green{
+    width: 50%;
+    height: 50px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.page-p{
+    font-size: 15px;
+    margin-top: 17px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:770px){
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-container{
+        width: 70%;
+    }
+
+    aside{
+        margin-left: 70px;
+    }
+
+    article{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    article>h1{
+        font-size: 60px;
+        color: blue;
+    }
+    
+    article>p{
+        font-size: 20px;
+    }
+
+    .page-p{
+        margin-left: -25%;
+    }
+
+    section{
+        margin-top: 10px;
+    }
+}
